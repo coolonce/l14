@@ -23,7 +23,7 @@ int Algoritm::GetCountWords(string str, int countChar)
 		string tmp = str.substr(prev, next - prev);
 		if(tmp.size() < countChar)
 		{ 
-			words.push_back(str.substr(prev, next - prev));
+			words.push_back(tmp);
 		}		
 		prev = next + delta;
 	}
