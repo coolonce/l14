@@ -8,6 +8,7 @@ class Algoritm
 public:
 	Algoritm();
 	~Algoritm();
-	int GetCountWords(string str, int countChar);
+	size_t GetCountWords(string str, int countChar);
+	vector<string> SplitQuery(string str);
 };
 
